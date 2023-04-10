@@ -1,0 +1,165 @@
+print ('Hello from Shikhun Course.........');
+
+//constant
+define('PI', 3.1416);
+
+echo PI;
+
+define('PI', 2.1324);
+
+//mathmetical operator and arithmetic operation
+$number1 = 100;
+$number2 = 30;
+
+echo $number1 + $number2;
+echo '<br/>';
+
+echo $number1 - $number2;
+echo '<br/>';
+
+echo $number1 * $number2;
+echo '<br/>';
+
+echo $number1 / $number2;
+echo '<br/>';
+
+echo $number1 % $number2;
+echo '<br/>';
+
+echo $number1 ** $number2;
+
+
+##Comparison operator logical operator
+// $name = 'Sumon';
+
+// $name .= ' Selim';
+
+// echo $name;
+
+//var_dump(10 > 5 );
+//var_dump(10 < 15);
+//var_dump(10 <= 15);
+//var_dump(10 >= 15);
+//var_dump(10 == 10);
+//var_dump(10 === 10);
+//var_dump(10 != 10);
+//var_dump('10' !== 10);
+
+// if else condition
+$day = 'Monday';
+
+if ($day === 'Firday' ||  $day === 'Saturday'){
+    echo 'Today is Holiday!';
+
+}
+elseif($day === 'Sunday')
+{
+    echo 'Today is Sunday';
+
+}
+elseif($day === 'Monday')
+{
+    echo 'Today is Monday';
+
+}
+
+else{
+    echo 'Today is not Holiday';
+}
+
+//array
+$array = ['Sumon', 'Selim', 25, 11.0];
+
+echo $array[1];
+
+//Associative array
+ $array = [
+    'first_name' => 'Sumon',  
+    'last_name'  => 'Selim', 
+    'age'        =>  25, 
+    'points'    =>  11.89
+    
+    ];
+
+    echo $array['points'];
+
+//multi-dimensional array
+
+$array = [
+    'name' => 'Sumon',
+    'age'  => 25,
+    'address' => [
+        'street_address'  =>  'House 12, Road 1',
+        'city'  => 'Dhaka',
+        'zipcode' => '1229',
+        'country' => 'Bangladesh'
+    ],
+
+    'mobile_number' => [
+        'country_prefix' => '+888',
+        'national_number' => '1764733575',
+
+    ],
+];
+
+//multi-dimensional array
+
+$array = [
+    'name' => 'Sumon',
+    'age'  => 25,
+];
+
+//for print all array
+print_r($array);
+
+//while loop
+
+$i = 1;
+while($i <= 10) {
+    echo $i . 'x7=' .$i*7 . '<br/>';
+
+    $i ++;
+}
+
+
+//do while loop
+$i = 1;
+do{
+    echo $i . 'x7=' .$i*7 . '<br/>';
+    $i++;
+}while($i <= 10);
+
+//for loop
+for ($i = 1; $i <=10; $i++){
+    echo $i . 'x7=' . $i*7 . '<br/>';
+}
+
+//foreach loop
+
+$array = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+];
+
+foreach($array as $value){
+    echo  $value . 'x5='  . $value * 5 . '<br/>';
+}
+
+function sum($number1, $number2){
+    return $number1 + $number2;
+}
+ 
+echo sum(15, 20);
+echo '<br/>';
+echo sum(25, 20);
+echo '<br/>';
+echo sum(125, 20);
+
+//php documentation built in function
+
+$array = [
+    10, 20, 30 , 40, 50, 20, 30
+];
+
+$filtered_array = array_unique($array);
+
+echo count($array);
